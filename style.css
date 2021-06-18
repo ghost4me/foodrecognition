@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color :#FFF;
+}
+
+h2 {
+    
+    font-size: 15px;
+    color :#FFF;
+    padding: 1px 4px 10px 0px;
+}
+
+/*button css*/
+html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: system-ui;
+    background: #4ab3f8;
+    color: white;
+    text-align: center;
+  }
+  
+  .button_slide {
+    color: #FFF;
+    border: 2px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+  }
+  
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #8eb1fd;
+  }
+  
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+  }
+  
+  .slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #D80286;
+  }
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+
+
+  /*counter*/
+  svg{
+    width:150px;
+    transform: rotate(-90deg);
+  }
+  .path-1 {
+    stroke-dashoffset: -410;
+    stroke-dasharray:  410;
+    animation: border 1s infinite ease-in-out reverse;
+  }
+  
+  @keyframes border {
+    to {
+      stroke-dashoffset: 0;
+    }
+  } 
+  
+  /* Unfortunately does not work in Safari :( */
+  .number:before {
+    content: " ";
+    animation: numberCount 10s 1;
+  }
+  @keyframes numberCount {
+    0% {content: " ";}
+    10% {content: "1";}
+    20% {content: "2";}
+    30% {content: "3";}
+    40% {content: "4";}
+    50% {content: "5";}
+    60% {content: "6";}
+    70% {content: "7";}
+    80% {content: "8";}
+    90% {content: "9";}
+    100% {content: "10";}
+  }
+  
+  /* using multiple items with delay */
+  .num {
+    background-color: #1839cf;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+  /*
+  .num p {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background-color: inherit;
+  }
+  .num p:last-of-type {
+    animation: num1 1s 1 forwards;
+  }
+  .num p:nth-of-type(4) {
+    animation: num1 1s 1s 1 forwards;
+  }
+  .num p:nth-of-type(3) {
+    animation: num1 1s 2s 1 forwards;
+  }
+  .num p:nth-of-type(2) {
+    animation: num1 1s 3s 1 forwards;
+  }
+  .num p:first-of-type {
+    animation: num1 1s 4s 1 forwards;
+  }
+  */
+  @keyframes num1 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
